@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
+<!--
+    Conceptual Question
+
+    Give an example of a valid IPv4 address:
+
+    Ex: 198.131.99.50
+-->
+
 <body>
     <div id="header">
         <h1 class="textlogo">Pancake De Lira</h1>
@@ -43,7 +51,22 @@
     </div>
 
 
-    <script src="" async defer></script>
+    <script>
+        let eNum = prompt("Enter a Number: ");
+
+        function evenCountDown(eNum) {
+            for (i = 1; i <= eNum; i++) {
+                console.log(i);
+            }
+        }
+
+        if (eNum % 2 == 0) {
+            evenCountDown(eNum);
+        } else {
+            console.log("This is an odd number");
+        }
+
+    </script>
 </body>
 
 </html>

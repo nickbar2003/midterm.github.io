@@ -53,7 +53,8 @@ li a {
 #nav a {
     font-family: Verdana, sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-variant-caps: small-caps;
     text-decoration: none;
 }
 

@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
+<!--
+    Conceptual Question
+
+    explain the flow of HTTP requests and responses
+
+    breakfastcavies.com/about.html
+
+    Steps: the browser does a DNS lookip of the domain name breakfastcavies.com
+
+    and uses the ip address return to establish a TCP connection
+
+    the web broswer would send a HTTP request to the authority breakfastcavies.com with the method GET and a path asking for the resource about.html
+
+    next the web server returns the about.html with a code to the web browser and a code fo 200 meaning OK. 
+    The web browser then caches about.html and displays it for the user.
+    
+    In the case of another request for the resource, the ETag for about.html will be included and compared by the webserver.
+    The response will return a 304 code if the resource has not changed.
+    The browser will display the cached resource. If the file has changed (meaning the ETags held by the browser and the server are the same) the server will return a 200 code and the new updated resource which the browser will display.
+
+    The TCP connection is closed.
+
+    
+
+
+-->
+
 <body>
     <div id="header">
         <h1 class="textlogo">Pancake De Lira</h1>
